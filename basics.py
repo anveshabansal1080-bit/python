@@ -10,4 +10,11 @@
 # PROGRAM 2: Simple print 
 # ==============================================
 
-print ("Hello World")
+#print ("Hello World")
+#===============================================
+# PROGRAM 3: datatype
+# ==============================================
+name = "anvesha"
+age = 20
+print(type(name))
+print(type(age))
