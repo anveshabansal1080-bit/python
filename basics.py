@@ -18,3 +18,39 @@ name = "anvesha"
 age = 20
 print(type(name))
 print(type(age))
+#===============================================
+# PROGRAM 4: Addition
+# ==============================================
+a=2
+b=3
+sum=a+b
+print(sum)
+#===============================================
+# PROGRAM 5: comment
+# ==============================================
+print("hello world")
+# multi-line 
+# comment(ctrl+/) for comment out multiply lines
+#===============================================
+# PROGRAM 6: operation
+# ==============================================
+a= int("2")
+b = 4.53
+sum = a + b
+print(sum)
+#===============================================
+# PROGRAM 7: typecasting
+# ==============================================
+name=input("enter your name:")
+print("welcome",name)  #the output will always be in str can use typecasting to change the datatype
+#===============================================
+# PROGRAM 8: addition by taking input
+# ==============================================
+a=int(input("enter first number:"))
+b=int(input("enter second number:"))
+print("sum=", a+b)
+#===============================================
+# PROGRAM 9: area by taking input
+# ==============================================
+side=int(input("enter the side:"))
+print("area=",side**2)
