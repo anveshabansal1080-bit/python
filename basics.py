@@ -54,3 +54,20 @@ print("sum=", a+b)
 # ==============================================
 side=int(input("enter the side:"))
 print("area=",side**2)
+#===============================================
+# PROGRAM 10: concatination (adding of two strings)
+# ==============================================
+str1="Anvesha"
+str2=" Bansal"
+print(str1+str2)
+#===============================================
+# PROGRAM 10: length (count the spaces,signs every single thing)
+# ==============================================
+str1="Anvesha"
+str2=" Bansal"
+print(len(str1+str2))
+#===============================================
+# PROGRAM 11: indexing(acces the element)
+# ==============================================
+str="Anvesha"
+print(str[5])
