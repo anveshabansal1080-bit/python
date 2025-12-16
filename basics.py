@@ -71,3 +71,95 @@ print(len(str1+str2))
 # ==============================================
 str="Anvesha"
 print(str[5])
+#===============================================
+# PROGRAM 12: slicing & negative slicing(picking the element)
+# ==============================================
+str="Anvesha Bansal"
+print(str[8:15])
+print(str[:7])
+print(str[8:])
+print(str[-14:-7])
+#===============================================
+# PROGRAM 13:endswith, capitalise,replace, find & count
+# ==============================================
+str="I am using python language for my coding."
+print(str.endswith("ing"))   # tell the ending
+print(str.endswith("ing."))
+
+str="i am using python language for my coding."     # capitalises the first letter by making new str
+print(str.capitalize()) 
+print(str)
+str1=str.capitalize()     # # capitalises the first letter in orignal string
+print(str1) 
+
+str="I am using python language for my coding."     # replaces the word or element
+print(str.replace("python","java")) 
+
+str="I am using python language for my coding."   #finds the index of the word
+print(str.find("python"))
+
+str="I am using python language for my coding."    # count the number of repeataton time
+print(str.count("my")) 
+#===============================================
+# PROGRAM 14: taking input finding the len
+# ==============================================
+name=input("Enter your name")
+print("length of my name is:",len(name))
+#===============================================
+# PROGRAM 15: taking str and count $
+# ==============================================
+str=("$ i $am $ using python lan$ua$e")
+print("total count of $is:",str.count("$"))
+#===============================================
+# PROGRAM 16: conditional statement
+# ==============================================
+marks=int(input("Enter total marks of student:"))     #taking inut and grade the student marks
+if(marks >= 90):
+    grade="A"
+elif(marks>=80 and marks<90):
+    grade="B"
+elif(marks>=70 and marks<80):
+    grade="C"
+else:
+    grade="D"
+print("grades of student:", grade)
+#===============================================
+# PROGRAM 17: nested statement
+# ==============================================
+age=25
+if (age>=18):
+    if(age>=80):
+        print("can't drive")
+    else:
+         print("can drive")
+else:
+    print("can't drive")
+#===============================================
+# PROGRAM 18: taking input and print even or odd
+# ==============================================
+num=int(input("enter your number:"))
+if(num%2==0):
+    print("even number")
+else:
+    print("odd number")
+#===============================================
+# PROGRAM 19: taking input and find the greatest number
+# ==============================================
+a=int(input("enter your first number:"))
+b=int(input("enter your second number:"))
+c=int(inp"enter your third number:"))
+
+if(a>=b and a>=c):
+    print("first number is greatest",a)
+elif(b>=c):
+     print("second number is greatest",b)
+else:
+    print("third number is greatest",c)
+#===============================================
+# PROGRAM 20: taking input and find multiply of 7
+# ==============================================
+num=int(input("enter your number:"))
+if(num%7==0):
+    print("mutliply of 7")
+else:
+    print("not a multiple of 7")
