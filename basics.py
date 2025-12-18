@@ -163,3 +163,76 @@ if(num%7==0):
     print("mutliply of 7")
 else:
     print("not a multiple of 7")
+#===============================================
+# PROGRAM 21: list 
+# ==============================================
+marks=[22.5,88.5,55.5,66.5,45.5,26.9]
+print(marks)
+print(type(marks))
+print(marks[3])
+print(len(marks))
+#===============================================
+# PROGRAM 22: list are mutable
+# ==============================================
+student=["arjun",85,"delhi",55.8]
+print(student)
+student[0]= "anvesha"
+print(student)
+#===============================================
+# PROGRAM 23: list methods
+# ==============================================
+marks=[22.5,88.5,55.5,66.5,45.5,26.9]
+marks.append(52)       #adds the element at last
+print(marks)
+marks.sort()      #sorts ascending order
+print(marks)
+marks.reverse()     #reverse the order
+print(marks)
+marks.insert(1,44)   #inserts the element(index,element)
+print(marks)
+marks=[55.5,88.5,55.5,66.5,45.5,26.9]
+marks.remove(55.5)    #remove the elment occuring firsttime
+print(marks)
+marks.pop(2)        #popsthe index element
+print(marks)
+#===============================================
+# PROGRAM 24: tuple
+# ==============================================
+tup=(55.5,88.5,55.5,66.5,45.5,26.9)      # they are immutable, (1,) with, only this will be considered as tuple othrwise it will be int
+print(type(tup))
+print(tup[1])  
+#===============================================
+# PROGRAM 25: tuple methods
+# ==============================================
+tup=(55.5,88.5,55.5,66.5,45.5,26.9)
+tup.index(55.5)       #first occurance index
+tup.count(55.5)       #count the total times of occurance
+#===============================================
+# PROGRAM 26: taking input of fav movies and combine them in tuple
+# ==============================================
+movie=[]
+movie.append(input("Enter your favrouite first movie:"))
+movie.append(input("Enter your favrouite second movie:"))
+movie.append(input("Enter your favrouite third movie:"))
+print(movie)
+#===============================================
+# PROGRAM 27: creating list and checking it is palindrome or not
+# ==============================================
+list1=["m","a","m"]                    
+copy_list1=list1.copy()
+list1.reverse()
+if(copy_list1 == list1):
+    print("palindrome")
+else:
+    print("not palindrome")
+#===============================================
+# PROGRAM 28: creating a tuple and finding grade a 
+# ==============================================
+tup=("c","d","a","a","b","b","a")
+tup.count("a")
+#===============================================
+# PROGRAM 29: making the tuple list and sorting them 
+# ==============================================
+tup=["c","d","a","a","b","b","a"]
+tup.sort()
+print(tup)
