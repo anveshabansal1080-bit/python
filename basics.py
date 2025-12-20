@@ -236,3 +236,59 @@ tup.count("a")
 tup=["c","d","a","a","b","b","a"]
 tup.sort()
 print(tup)
+#===============================================
+# PROGRAM 30: dictionary (key value pair) (mutable)
+# ==============================================
+info = {
+    "name":"anvesha",
+    "age":20,
+    "education":["dav public school","banasthaali vidhyapith","invertis university"],
+    "female":True
+}
+info["name"]="invertis"          #mutable it overwrites can be changed
+info["citizen"]="india"          #can add element later
+print(info)
+#===============================================
+# PROGRAM 31: nested dictionary
+# ==============================================
+student={
+    "name":"anu",
+    "subjects":{          #can make dic. inside one dic
+    "phy":52,
+    "maths":56,
+    "eng":60
+}}
+print(student)
+#===============================================
+# PROGRAM 32: methods of dictionary
+# ==============================================
+student={
+    "name":"anu",
+    "subjects":{
+    "phy":52,
+    "maths":56,
+    "eng":60
+}}
+print(student.keys())        #returns the key
+print(student.values())       #returns the value
+print(student.items())        #retuens all key and value together
+print(list(student.items()))   #changes the dic. into list beacuse it is mutable 
+print(student.get("name"))      #get specific key value if doesnt exist it gives none and excecutes the code
+student.update({"city":"babrala"})      #can add new key value in dic already exists
+print(student)
+student.update({"name":"anvesha"})       #it doesnt add any new keyvalue as dic doesnt store duplicate value so it updates the old value 
+print(student)
+#===============================================
+# PROGRAM 33:sets (immutable) (unorderd-not prints the output in order comes in shuffled form)
+# ==============================================
+collection={1,2,3,4,4,"hello","world"}
+print(type(collection))           
+print(collection)            #cant change it in dic,list as they are mutable
+print(len(collection))        #only print one item dont print duplicate either in len or type 
+#===============================================
+# PROGRAM 33:null sets and dictionary
+# ==============================================
+collection={}
+print(type(collection))       #null dictionary
+collection=set()
+print(type(collection))        #null set
