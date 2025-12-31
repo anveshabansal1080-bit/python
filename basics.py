@@ -164,7 +164,7 @@ if(num%7==0):
 else:
     print("not a multiple of 7")
 #===============================================
-# PROGRAM 21: list 
+# PROGRAM 21: list (they are mutable unhasable)
 # ==============================================
 marks=[22.5,88.5,55.5,66.5,45.5,26.9]
 print(marks)
@@ -196,7 +196,7 @@ print(marks)
 marks.pop(2)        #popsthe index element
 print(marks)
 #===============================================
-# PROGRAM 24: tuple
+# PROGRAM 24: tuple (immutable they are hasable)
 # ==============================================
 tup=(55.5,88.5,55.5,66.5,45.5,26.9)      # they are immutable, (1,) with, only this will be considered as tuple othrwise it will be int
 print(type(tup))
@@ -292,3 +292,41 @@ collection={}
 print(type(collection))       #null dictionary
 collection=set()
 print(type(collection))        #null set
+#===============================================
+# PROGRAM 34:methods of sets
+# ==============================================
+collection=set()
+collection.add(1)       #adding elements
+collection.add(2)
+collection.add(3)
+collection.add(4)
+collection.add(5)
+collection.add(1)           #doesn't count as it is duplicate
+collection.remove(1)          #remove element
+collection.add((1,2,3))
+collection.add([1,2,3])      #list can be stored in it it will give error(only stores immutable values ie. hashvalues)
+print(collection)
+collection.clear()             #clears the set
+print(len(collection))
+
+a={"hello","python",2.0,"Jupyter notebook"}
+print(a.pop())            #pops rendum value
+print(a.pop())
+
+set1={1,2,3,4,5}
+set2={1,6,7,3}
+print(set1.union(set2))           #union
+print(set1.intersection(set2))     #intersection
+#===============================================
+# PROGRAM 35:make a dictionary and insert the values
+# ==============================================
+dictionary={
+    "cat":"a small animal",
+    "table":["a piece of furniture","list of facts and figures"]
+}
+print(dictionary)
+#===============================================
+# PROGRAM 36:some og subjects are give how many classes we need for students as per subjects
+# ==============================================
+set={"python","java","c++","python","java script","java","python","java","c++","c"}
+print(set)
